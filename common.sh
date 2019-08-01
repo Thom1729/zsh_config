@@ -41,6 +41,8 @@ alias each="xargs --delimiter='\n' --max-args=1"
 
 alias zsh-reload='source ~/.zshrc'
 
+alias bell="echo '\a'"
+
 function md {
     mkdir -p "$@"
     cd "$@"
