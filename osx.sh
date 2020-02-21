@@ -4,6 +4,7 @@ export SUBLIME_COMMAND="/Applications/Sublime Text.app/Contents/SharedSupport/bi
 # GNU Coreutils
 
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+export PATH=/usr/local/opt/findutils/libexec/gnubin:$PATH
 
 function play-sound {
     afplay "/System/Library/Sounds/$1.aiff" &!
@@ -15,6 +16,6 @@ function ding {
         play-sound Hero
     else
         play-sound Sosumi
-        return $last_status
     fi
+    return $last_status
 }
